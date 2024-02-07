@@ -43,15 +43,15 @@ class LvxClientRos : public rclcpp::Node {
  private:
   static constexpr char k_default_node_name[] = "lvx_client";
 
-  static constexpr char k_topic_orientation[]    = "/applanix/lvx_client/autoware_orientation";
-  static constexpr char k_topic_odometry[]       = "/applanix/lvx_client/odom";
-  static constexpr char k_topic_navsat[]         = "/applanix/lvx_client/gnss/fix";
-  static constexpr char k_topic_imu[]            = "/applanix/lvx_client/imu_raw";
-  static constexpr char k_topic_twist[]          = "/applanix/lvx_client/twist_with_covariance";
-  static constexpr char k_topic_gsof_49[]        = "/applanix/lvx_client/gsof/ins_solution_49";
-  static constexpr char k_topic_gsof_50[]        = "/applanix/lvx_client/gsof/ins_solution_rms_50";
-  static constexpr char k_service_set_origin[]   = "/lvx_client/set_origin";
-  static constexpr char k_service_reset_origin[] = "/lvx_client/reset_origin";
+  static constexpr char k_topic_orientation[]    = "applanix/lvx_client/autoware_orientation";
+  static constexpr char k_topic_odometry[]       = "applanix/lvx_client/odom";
+  static constexpr char k_topic_navsat[]         = "applanix/lvx_client/gnss/fix";
+  static constexpr char k_topic_imu[]            = "applanix/lvx_client/imu_raw";
+  static constexpr char k_topic_twist[]          = "applanix/lvx_client/twist_with_covariance";
+  static constexpr char k_topic_gsof_49[]        = "applanix/lvx_client/gsof/ins_solution_49";
+  static constexpr char k_topic_gsof_50[]        = "applanix/lvx_client/gsof/ins_solution_rms_50";
+  static constexpr char k_service_set_origin[]   = "lvx_client/set_origin";
+  static constexpr char k_service_reset_origin[] = "lvx_client/reset_origin";
 
 
 
